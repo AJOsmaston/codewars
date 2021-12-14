@@ -29,3 +29,16 @@ describe('duplicateEncoder', () => {
         })
     });
 });
+
+const chai = require("chai");
+const assert = chai.assert;
+chai.config.truncateThreshold=0;
+
+describe("Duplicate Encoder", () => {
+  it("Testing for fixed tests", () => {
+    assert.strictEqual(duplicateEncoder("din"),"(((");
+    assert.strictEqual(duplicateEncoder("recede"),"()()()");
+    assert.strictEqual(duplicateEncoder("Success"),")())())","should ignore case");
+    assert.strictEqual(duplicateEncoder("(( @"),"))((");
+  });
+});
