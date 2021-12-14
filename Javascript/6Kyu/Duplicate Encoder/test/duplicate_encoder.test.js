@@ -21,5 +21,11 @@ describe('duplicateEncoder', () => {
                 duplicateEncoder("dd")
             ).toEqual("))");
         })
+
+        it('returns )) for double input mixed case', () => {
+            expect(
+                duplicateEncoder("Dd")
+            ).toEqual("))");
+        })
     });
 });

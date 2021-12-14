@@ -3,7 +3,8 @@ const duplicateEncoder = (input) => {
     let input_array = input.split("");
     let scoring = {};
     input_array.forEach(letter => {
-        !scoring[letter] ? scoring[letter] = 1 : scoring[letter] += 1;
+        let lCLetter = letter.toLowerCase()
+        !scoring[lCLetter] ? scoring[lCLetter] = 1 : scoring[lCLetter] += 1;
     });
     input_array.forEach(letter => {
         string += (scoring[letter] === 1 ? "(" : ")");
