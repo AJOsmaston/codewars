@@ -1,7 +1,15 @@
 const duplicateEncoder = require("../lib/duplicate_encoder")
 
 describe('duplicateEncoder', () => {
-    it('passes the first test', () => {
-        expect(duplicateEncoder("d")).toEqual("(")
-    })
+    it('returns ( for single input', () => {
+        expect(
+            duplicateEncoder("d")
+        ).toEqual("(");
+    });
+
+    it('returns (( for 2x single inputs', () => {
+        expect(
+            duplicateEncoder("dq")
+        ).toEqual("((")
+    });
 })
