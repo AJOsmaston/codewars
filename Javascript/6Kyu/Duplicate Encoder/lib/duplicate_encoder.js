@@ -3,18 +3,10 @@ const duplicateEncoder = (input) => {
     let input_array = input.split("");
     let scoring = {};
     input_array.forEach(letter => {
-        if (!scoring[letter]) {
-            scoring[letter] = 1
-        } else {
-            scoring[letter] += 1
-        }
+        !scoring[letter] ? scoring[letter] = 1 : scoring[letter] += 1;
     });
     input_array.forEach(letter => {
-        if (scoring[letter] === 1) {
-            string += "("
-        } else {
-            string += ")"
-        }
+        scoring[letter] === 1 ? string += "(" : string += ")";
     });
     return string;
 }
