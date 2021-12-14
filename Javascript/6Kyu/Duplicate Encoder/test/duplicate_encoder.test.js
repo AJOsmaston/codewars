@@ -34,7 +34,7 @@ const chai = require("chai");
 const assert = chai.assert;
 chai.config.truncateThreshold=0;
 
-describe("Duplicate Encoder", () => {
+describe("Codewars tests", () => {
   it("Testing for fixed tests", () => {
     assert.strictEqual(duplicateEncoder("din"),"(((");
     assert.strictEqual(duplicateEncoder("recede"),"()()()");
@@ -42,3 +42,9 @@ describe("Duplicate Encoder", () => {
     assert.strictEqual(duplicateEncoder("(( @"),"))((");
   });
 });
+
+describe('failed tests', () => {
+    expect(
+        duplicateEncoder("CodeWarrior")
+    ).toEqual("()(((())())");
+})
