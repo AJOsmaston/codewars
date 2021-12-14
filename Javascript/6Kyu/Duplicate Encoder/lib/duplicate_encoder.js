@@ -1,16 +1,14 @@
 const duplicateEncoder = (input) => {
-    let string = "";
-    let input_array = input.split("");
+    let result = "";
     let scoring = {};
-    input_array.forEach(letter => {
-        let lCLetter = letter.toLowerCase()
-        !scoring[lCLetter] ? scoring[lCLetter] = 1 : scoring[lCLetter] += 1;
+    let standardised_array = input.split("").map(letter => letter.toLowerCase())
+    standardised_array.forEach(letter => {
+        !scoring[letter] ? scoring[letter] = 1 : scoring[letter] += 1;
     });
-    input_array.forEach(letter => {
-        let lCLetter = letter.toLowerCase()
-        string += (scoring[lCLetter] === 1 ? "(" : ")");
+    standardised_array.forEach(letter => {
+        result += (scoring[letter] === 1 ? "(" : ")");
     });
-    return string;
+    return result;
 }
 
 module.exports = duplicateEncoder;
