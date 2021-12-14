@@ -6,7 +6,7 @@ const duplicateEncoder = (input) => {
         !scoring[letter] ? scoring[letter] = 1 : scoring[letter] += 1;
     });
     input_array.forEach(letter => {
-        scoring[letter] === 1 ? string += "(" : string += ")";
+        string += (scoring[letter] === 1 ? "(" : ")");
     });
     return string;
 }
