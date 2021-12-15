@@ -5,6 +5,10 @@ describe 'example' do
     it 'returns false for no walk' do
       expect(is_valid_walk([])).to eq false
     end
+
+    it 'returns false for a length 10 walk that doesnt end in right place' do
+      expect(is_valid_walk(['n','s','n','s','n','s','n','s','n','n'])).to eq false
+    end
   end
 
   describe 'returns true' do
