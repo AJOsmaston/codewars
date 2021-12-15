@@ -1,3 +1,3 @@
 def is_valid_walk(directions)
-  false
+  directions.length == 10
 end
