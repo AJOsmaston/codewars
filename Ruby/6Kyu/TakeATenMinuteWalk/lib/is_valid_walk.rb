@@ -1,8 +1,13 @@
 def is_valid_walk(directions)
   # guard clause to eliminate some straight away
   return false unless directions.length == 10
+  
+  scores = { 
+    'x' => 0,
+    'y' => 0,
+  }
   # create copy of scores
-  journey_score = scores
+  journey_score = scores.dup
   # score each direction
   directions.each do |letter|
     case letter
@@ -19,8 +24,3 @@ def is_valid_walk(directions)
   # compare copy with original
   journey_score == scores
 end
-
-def scores = { 
-  'x' => 0,
-  'y' => 0,
-}
