@@ -24,5 +24,12 @@ Method
 * convert to string based on alphabet position
 * return concataneted string
 
+After Submitting
+-----
+
+* look at charCodeAt() method - to replace scores object
+* use method match with regex
+* Regex - match(/[a-z]/gi)
+
 
 [Link to Kata](https://www.codewars.com/kata/546f922b54af40e1e90001da/train/javascript)
