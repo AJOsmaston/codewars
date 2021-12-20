@@ -22,6 +22,10 @@ describe('alphabet position', () => {
     it('returns blank string for non-character "."', () => {
       expect(alphabet_position(".")).toEqual("")
     })
+
+    it('returns blank string for non-character "."', () => {
+      expect(alphabet_position("!")).toEqual("")
+    })
   })
 
 
