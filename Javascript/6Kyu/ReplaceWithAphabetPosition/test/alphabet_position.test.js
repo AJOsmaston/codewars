@@ -28,5 +28,11 @@ describe('alphabet position', () => {
     })
   })
 
+  describe('multiple characters', () => {
+    it('works for two characters "aa"', () => {
+      expect(alphabet_position("aa")).toEqual("1 1")
+    })
+  })
+
 
 })

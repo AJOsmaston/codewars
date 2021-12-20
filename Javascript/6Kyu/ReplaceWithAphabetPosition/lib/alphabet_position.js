@@ -1,6 +1,11 @@
 const alphabet_position = (text) => {
-  if(!isLetter(text)){return ""}
-  return scores[text.toLowerCase()]
+  result_string = "";
+  chars_array = text.split('');
+  chars_array.forEach(letter => {
+    if(!isLetter(letter)){return};
+    result_string += scores[letter.toLowerCase()] + " ";
+  });
+  return result_string.trim();
 };
 
 const isLetter = (c) => {
