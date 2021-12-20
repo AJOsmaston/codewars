@@ -10,4 +10,11 @@ describe('alphabet position', () => {
     expect(alphabet_position("t")).toEqual("20")
   })
 
+  it('works for single uppercase character A', () => {
+    expect(alphabet_position("A")).toEqual("1")
+  })
+
+  it('works for single uppercase character T', () => {
+    expect(alphabet_position("T")).toEqual("20")
+  })
 })

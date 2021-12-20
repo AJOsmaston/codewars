@@ -1,5 +1,5 @@
 const alphabet_position = (text) => {
-  return scores[text]
+  return scores[text.toLowerCase()]
 };
 
 const scores = {
