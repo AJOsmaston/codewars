@@ -32,6 +32,10 @@ describe('alphabet position', () => {
     it('works for two characters "aa"', () => {
       expect(alphabet_position("aa")).toEqual("1 1")
     })
+
+    it('works for two characters "zb"', () => {
+      expect(alphabet_position("zb")).toEqual("26 2")
+    })
   })
 
 
