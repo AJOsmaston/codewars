@@ -1,3 +1,3 @@
 def persistence(num)
-  num
+  num.to_s.split('').map(&:to_i).inject(:*)
 end
