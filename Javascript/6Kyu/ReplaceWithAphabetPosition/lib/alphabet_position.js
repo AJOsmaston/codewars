@@ -1,6 +1,11 @@
 const alphabet_position = (text) => {
+  if(!isLetter(text)){return ""}
   return scores[text.toLowerCase()]
 };
+
+const isLetter = (c) => {
+  return c.toLowerCase() != c.toUpperCase();
+}
 
 const scores = {
   "a" : "1",
