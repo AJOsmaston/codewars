@@ -1,16 +1,16 @@
-const alphabet_position = (text) => {
+const alphabetPosition = (text) => {
   result_string = "";
   chars_array = text.split('');
   chars_array.forEach(letter => {
-    if(!isLetter(letter)){return};
+    if(isNotLetter(letter)){return};
     result_string += scores[letter.toLowerCase()] + " ";
   });
   return result_string.trim();
 };
 
-const isLetter = (c) => {
-  return c.toLowerCase() != c.toUpperCase();
-}
+const isNotLetter = (c) => {
+  return c.toLowerCase() === c.toUpperCase();
+};
 
 const scores = {
   "a" : "1",
@@ -39,6 +39,6 @@ const scores = {
   "x" : "24",
   "y" : "25",
   "z" : "26",
-}
+};
 
-module.exports = alphabet_position;
+module.exports = alphabetPosition;
