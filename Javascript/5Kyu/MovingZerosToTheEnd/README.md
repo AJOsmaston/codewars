@@ -16,3 +16,8 @@ Method
 * If 0, delete element and move to end - otherwise go to next element.
 
 [Link to Kata](https://www.codewars.com/kata/52597aa56021e91c93000cb0/train/javascript)
+
+DeBrief
+-----
+
+* Look into filter function
