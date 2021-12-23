@@ -1,14 +1,16 @@
 const humanReadable = require('../lib/humanReadable')
 
 describe('TDD tests', () => {
+  
   it('formats correctly', () => {
     expect(humanReadable(0)).toEqual('00:00:00')
   })
-  // describe('seconds', () => {
-  //   it('1 second', () => {
-  //     expect(humanReadable(1)).toEqual('00:00:01')
-  //   })
-  // })
+
+  describe('seconds', () => {
+    it('1 second', () => {
+      expect(humanReadable(1)).toEqual('00:00:01')
+    })
+  })
 
 })
 
