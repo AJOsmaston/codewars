@@ -15,6 +15,11 @@ You can find some examples in the test fixtures.
 Breakdown
 -----
 
+* Implement Seconds
+* Implement Minutes
+* Implement Hours
+* Profit?
+
 After Submitting
 -----
 
