@@ -34,4 +34,6 @@ Breakdown
 After Submitting
 -----
 
-[Link to Kata]()
+* Looking at the top answer like : O 
+
+[Link to Kata](https://www.codewars.com/kata/521c2db8ddc89b9b7a0000c1/train/ruby)
