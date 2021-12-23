@@ -13,4 +13,15 @@ describe 'tests' do
     end
   end
 
+  describe '2x2' do
+    it 'calculates for 2x2' do
+      expect(
+        snail(
+          [[1, 2], 
+          [3, 4]]
+          )
+        ).to eq [1, 2, 4, 3]
+    end
+  end
+
 end
