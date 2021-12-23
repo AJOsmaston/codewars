@@ -20,6 +20,9 @@ describe('TDD tests', () => {
     it('60 seconds', () => {
       expect(humanReadable(60)).toEqual('00:01:00')
     })
+    it('3599 seconds', () => {
+      expect(humanReadable(3599)).toEqual('00:59:59')
+    })
   })
 
 })
