@@ -23,4 +23,7 @@ Breakdown
 After Submitting
 -----
 
-[Link to Kata]()
+* Remove non-needed modulo for hours and brackets from seconds
+
+
+[Link to Kata](https://www.codewars.com/kata/52685f7382004e774f0001f7)
