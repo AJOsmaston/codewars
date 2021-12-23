@@ -1,3 +1,4 @@
 def snail(array)
-  # enjoy
+  puts array.length
+  return [] if array.length == 1
 end
