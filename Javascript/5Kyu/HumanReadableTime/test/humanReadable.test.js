@@ -25,6 +25,12 @@ describe('TDD tests', () => {
     })
   })
 
+  describe('hours', () => {
+    it('3600 seconds', () => {
+      expect(humanReadable(3600)).toEqual('01:00:00')
+    })
+  })
+
 })
 
 // describe('codewars tests', function() {

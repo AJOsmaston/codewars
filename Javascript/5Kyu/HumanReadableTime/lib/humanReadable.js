@@ -7,7 +7,11 @@ function humanReadable (seconds) {
     .toString()
     .padStart(2, '0');
 
-  return `00:${mm}:${ss}`;
+  let hh = (Math.floor(seconds / 3600) % 60)
+    .toString()
+    .padStart(2, '0');
+
+  return `${hh}:${mm}:${ss}`;
 }
 
 module.exports = humanReadable;
