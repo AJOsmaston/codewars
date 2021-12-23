@@ -29,6 +29,10 @@ describe('TDD tests', () => {
     it('3600 seconds', () => {
       expect(humanReadable(3600)).toEqual('01:00:00')
     })
+
+    it('359999 seconds', () => {
+      expect(humanReadable(359999)).toEqual('99:59:59')
+    })
   })
 
 })

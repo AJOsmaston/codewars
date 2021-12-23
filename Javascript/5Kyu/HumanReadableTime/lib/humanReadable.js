@@ -7,7 +7,7 @@ function humanReadable (seconds) {
     .toString()
     .padStart(2, '0');
 
-  let hh = (Math.floor(seconds / 3600) % 60)
+  let hh = (Math.floor(seconds / 3600) % 100)
     .toString()
     .padStart(2, '0');
 
