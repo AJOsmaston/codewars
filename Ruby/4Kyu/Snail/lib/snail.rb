@@ -23,7 +23,7 @@ def snail(array)
   left_side = array.map do |inner_array| 
     inner_array[0]
     inner_array.delete_at(0)
-  end
+  end.reverse
 
   #work way round shell, then work on next layer recursively
   return top + right_side + bottom + left_side + snail(array)
