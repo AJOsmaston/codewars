@@ -3,7 +3,6 @@ const formatDuration = (s) => {
   if (s === 0 ) { return "now"}
 
   result_array = []
-  result = ""
 
   //calculate years
   if ( s >= 31536000 ) {
@@ -37,19 +36,23 @@ const formatDuration = (s) => {
   if ( s > 0 ) { result_array.push(pluralise(s, "second")) }
   
   //string formatting
-  if (result_array.length === 1){
-    return result_array[0]
-  } else if (result_array.length === 2){
-    return `${result_array[result_array.length - 2]} and ${result_array[result_array.length - 1]}`
-  } else {
-    return result_array.slice(0, -1).join(", ") + ` and ${result_array[result_array.length - 1]}`
-  }
+  return formatArray(result_array)
 };
 
 const pluralise = (input, time) => {
   if ( input >= 1 ) {
     if (input == 1) { return `${input} ${time}`; }
     else { return `${input} ${time}s`; };
+  }
+}
+
+const formatArray = (result_array) => {
+  if (result_array.length === 1){
+    return result_array[0]
+  } else if (result_array.length === 2){
+    return `${result_array[result_array.length - 2]} and ${result_array[result_array.length - 1]}`
+  } else {
+    return result_array.slice(0, -1).join(", ") + ` and ${result_array[result_array.length - 1]}`
   }
 }
 
