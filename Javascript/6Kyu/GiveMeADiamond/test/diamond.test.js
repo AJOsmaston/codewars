@@ -13,6 +13,16 @@ describe('tests', () => {
     it('returns null on negative 1', () => {
       expect(diamond(-1)).toEqual(null)
     })
+
+    it('returns null on negative 1', () => {
+      expect(diamond(-3)).toEqual(null)
+    })
+  })
+
+  describe('diamonds', () => {
+    it('returns size 1 diamond', () => {
+      expect(diamond(1)).toEqual("*\n")
+    })
   })
   
 })
