@@ -39,4 +39,7 @@ Breakdown
 After Submitting
 -----
 
+* Took a while to conceptualise how to do this, eventually split it into three different parts, the top bottom and middle. Middle was easy enough, top and bottom were a little bit more difficult and involved a bit of trial and error trying to conceptualise how the amount of spaces and stars related to which iteration of which loop.
+* A lot of the best answers to this are similarly convoluted mathematically, so not much else to do here.
+
 [Link to Kata](https://www.codewars.com/kata/5503013e34137eeeaa001648/train/javascript)
