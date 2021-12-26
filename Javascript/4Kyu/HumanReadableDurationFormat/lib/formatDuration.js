@@ -1,7 +1,5 @@
 const formatDuration = (s) => {
-
-  if (s === 0 ) { return "now"}
-
+  if (s === 0 ) { return "now" }
   result_array = []
 
   //calculate years
@@ -35,7 +33,6 @@ const formatDuration = (s) => {
   //calculate seconds
   if ( s > 0 ) { result_array.push(pluralise(s, "second")) }
   
-  //string formatting
   return formatArray(result_array)
 };
 
@@ -47,6 +44,7 @@ const pluralise = (input, time) => {
 }
 
 const formatArray = (result_array) => {
+  //string formatting
   if (result_array.length === 1){
     return result_array[0]
   } else if (result_array.length === 2){
