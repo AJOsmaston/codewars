@@ -70,6 +70,26 @@ describe('tests', () => {
     it('calculates for 31536000s', () => {
       expect(formatDuration(31536000)).toEqual("1 year");
     });
+
+    it('calculates for 31536001s', () => {
+      expect(formatDuration(31536001)).toEqual("1 year and 1 second");
+    });
+
+    it('calculates for 31536060s', () => {
+      expect(formatDuration(31536060)).toEqual("1 year and 1 minute");
+    });
+
+    it('calculates for 31536061s', () => {
+      expect(formatDuration(31536061)).toEqual("1 year, 1 minute and 1 second");
+    });
+
+    it('calculates for 31626061s', () => {
+      expect(formatDuration(31626061)).toEqual("1 year, 1 day, 1 hour, 1 minute and 1 second");
+    });
+
+    it('calculates for 63162061s', () => {
+      expect(formatDuration(63162061)).toEqual("2 years, 1 day, 1 hour, 1 minute and 1 second");
+    });
   });
   
 });
