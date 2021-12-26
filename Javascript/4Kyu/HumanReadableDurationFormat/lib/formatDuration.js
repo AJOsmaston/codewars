@@ -4,7 +4,7 @@ const formatDuration = (s) => {
   if ( s >= 60 ) {
     minutes = Math.floor(s/60)
     result += pluralise(minutes, "minute")
-    if (s !== 60) { result += " and " }
+    if (s % 60 !== 0) { result += " and " }
     s -= (minutes * 60)
   }
 

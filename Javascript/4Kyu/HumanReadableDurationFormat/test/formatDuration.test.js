@@ -23,6 +23,10 @@ describe('tests', () => {
     it('calculates for 60s', () => {
       expect(formatDuration(60)).toEqual("1 minute");
     });
+
+    it('calculates for 120s', () => {
+      expect(formatDuration(120)).toEqual("2 minutes");
+    });
   });
   
 });
