@@ -91,5 +91,11 @@ describe('tests', () => {
       expect(formatDuration(63162061)).toEqual("2 years, 1 day, 1 hour, 1 minute and 1 second");
     });
   });
+
+  describe('edge cases', () => {
+    it('calculates for 0s', () => {
+      expect(formatDuration(0)).toEqual("now");
+    });
+  });
   
 });

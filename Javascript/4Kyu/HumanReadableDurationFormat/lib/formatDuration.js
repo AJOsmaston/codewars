@@ -1,4 +1,7 @@
 const formatDuration = (s) => {
+
+  if (s === 0 ) { return "now"}
+
   result_array = []
   result = ""
 
