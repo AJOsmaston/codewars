@@ -15,6 +15,10 @@ describe('tests', () => {
     it('calculates for 61s', () => {
       expect(formatDuration(61)).toEqual("1 minute and 1 second");
     });
+
+    it('calculates for 119s', () => {
+      expect(formatDuration(119)).toEqual("1 minute and 59 seconds");
+    });
   });
   
 });
