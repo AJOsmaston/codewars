@@ -1,5 +1,6 @@
 const formatDuration = (s) => {
-  return `${s} second`
+  if (s == 1) { return `${s} second` }
+  else { return `${s} seconds` }
 };
 
 module.exports = formatDuration;
