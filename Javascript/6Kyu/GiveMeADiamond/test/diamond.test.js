@@ -5,6 +5,10 @@ describe('tests', () => {
     it('returns null on even 2', () => {
       expect(diamond(2)).toEqual(null)
     })
+
+    it('returns null on even 4', () => {
+      expect(diamond(2)).toEqual(null)
+    })
   })
   
 })
