@@ -31,6 +31,9 @@ A unit of time must be used "as much as possible". It means that the function sh
 Breakdown
 -----
 
+* Start with seconds
+* Move on to minutes and seconds
+* etc
 
 
 After Submitting
