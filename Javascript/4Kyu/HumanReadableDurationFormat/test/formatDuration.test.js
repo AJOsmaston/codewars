@@ -28,5 +28,12 @@ describe('tests', () => {
       expect(formatDuration(120)).toEqual("2 minutes");
     });
   });
+
+  describe('hours', () => {
+    it('calculates for 3601s', () => {
+      expect(formatDuration(3601)).toEqual("1 hour and 1 second");
+    });
+
+  })
   
 });
