@@ -2,6 +2,13 @@ const formatDuration = (s) => {
   result_array = []
   result = ""
 
+  //calculate years
+  if ( s >= 31536000 ) {
+    years = Math.floor(s/31536000)
+    result_array.push(pluralise(years, "year"))
+    s -= (years * 31536000)
+  }
+
   //calculate days
   if ( s >= 86400 ) {
     days = Math.floor(s/86400)

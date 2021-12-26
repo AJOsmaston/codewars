@@ -65,5 +65,11 @@ describe('tests', () => {
       expect(formatDuration(176461)).toEqual("2 days, 1 hour, 1 minute and 1 second");
     });
   });
+
+  describe('years', () => {
+    it('calculates for 31536000s', () => {
+      expect(formatDuration(31536000)).toEqual("1 year");
+    });
+  });
   
 });
