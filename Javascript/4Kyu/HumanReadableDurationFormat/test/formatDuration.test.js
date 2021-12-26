@@ -43,5 +43,11 @@ describe('tests', () => {
     });
 
   })
+
+  describe('days', () => {
+    it('calculates for 86400s', () => {
+      expect(formatDuration(86400)).toEqual("1 day");
+    });
+  });
   
 });

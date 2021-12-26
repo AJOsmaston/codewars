@@ -2,6 +2,13 @@ const formatDuration = (s) => {
   result_array = []
   result = ""
 
+  //calculate days
+  if ( s >= 86400 ) {
+    days = Math.floor(s/86400)
+    result_array.push(pluralise(days, "day"))
+    s -= (days * 86400)
+  }
+
   //calculate hours
   if ( s >= 3600 ) {
     hours = Math.floor(s/3600)
