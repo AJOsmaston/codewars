@@ -5,7 +5,7 @@ const diamond = (number) => {
   // Top half
   let top = ""
   for (let i = 1; i < (number / 2); i++) {
-    top += " ".repeat(i) + "*".repeat(i) + "\n"
+    top += " ".repeat(Math.ceil(number / 2) - i) + "*".repeat(2*i-1) + "\n"
   }
 
   let middle = "*".repeat(number) + "\n"
@@ -13,7 +13,7 @@ const diamond = (number) => {
   // Bottom half
   let bottom = ""
   for (let i = 1; i < (number / 2); i++) {
-    bottom += " ".repeat(i) + "*".repeat(i) + "\n"
+    bottom += " ".repeat(i) + "*".repeat(number - (2*i)) + "\n"
   }
 
   return top + middle + bottom;

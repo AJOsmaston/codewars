@@ -27,6 +27,10 @@ describe('tests', () => {
     it('returns size 3 diamond', () => {
       expect(diamond(3)).toEqual(" *\n***\n *\n")
     })
+
+    it('returns size 5 diamond', () => {
+      expect(diamond(5)).toEqual("  *\n ***\n*****\n ***\n  *\n")
+    })
   })
   
 })
