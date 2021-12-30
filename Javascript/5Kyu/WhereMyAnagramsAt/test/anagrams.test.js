@@ -21,4 +21,14 @@ describe('tests', () => {
     })
   })
 
+  describe('given examples', () => {
+    it('works for the first example', () => {
+      expect(anagrams('abba', ['aabb', 'abcd', 'bbaa', 'dada'])).toEqual(['aabb', 'bbaa']);
+    });
+
+    it('works for the second example', () => {
+      expect(anagrams('racer', ['crazer', 'carer', 'racar', 'caers', 'racer'])).toEqual(['carer', 'racer']);
+    });
+  })
+
 })
