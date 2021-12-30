@@ -1,5 +1,8 @@
 const anagrams = (word, words) => {
-  return words
+  if (words.includes(word)) {
+    return words
+  } 
+  return []
 };
 
 module.exports = anagrams;

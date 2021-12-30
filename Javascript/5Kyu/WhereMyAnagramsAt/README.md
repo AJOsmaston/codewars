@@ -30,6 +30,9 @@ For Go: Empty string slice is expected when there are no anagrams found.
 Breakdown
 -----
 
+* Sort both word and each word in the words array
+* if word matches word, add to new array
+
 After Submitting
 -----
 
