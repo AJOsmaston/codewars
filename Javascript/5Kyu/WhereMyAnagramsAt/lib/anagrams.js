@@ -1,13 +1,24 @@
 const anagrams = (word, words) => {
-  if (!words.includes(word)) {
-    return []
-  };
+ 
   
   let results = [];
 
+  let sortedWord = word.split('').sort().join('');
+  let sortedWords = [];
+
   words.forEach(element => {
-    if (element === word) { results.push(element) }
+    sortedWords.push(element.split('').sort().join(''));
   });
+
+  if (!sortedWords.includes(sortedWord)) {
+    return [];
+  };
+
+  for(let i = 0; i < sortedWords.length; i++) {
+    if (sortedWords[i] === sortedWord) {
+      results.push(words[i]);
+    };
+  };
 
   return results;
 

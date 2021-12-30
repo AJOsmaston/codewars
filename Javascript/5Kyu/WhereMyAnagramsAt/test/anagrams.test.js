@@ -15,6 +15,10 @@ describe('tests', () => {
     it('searches through an array', () => {
       expect(anagrams('a', ['b', 'c', 'a'])).toEqual(['a'])
     })
+
+    it('returns multiple in order', () => {
+      expect(anagrams('ab', ['ab', 'b', 'c', 'ba'])).toEqual(['ab', 'ba'])
+    })
   })
 
 })
