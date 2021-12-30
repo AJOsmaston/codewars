@@ -36,4 +36,9 @@ Breakdown
 After Submitting
 -----
 
+Overall quite happy with this one, although looking at the best practise result on codewars:
+
+* using String.prototype.sort gives the ability to use .sort() on a string. Neat.
+* look at filter with a callback function.
+
 [Link to Kata](https://www.codewars.com/kata/523a86aa4230ebb5420001e1)
