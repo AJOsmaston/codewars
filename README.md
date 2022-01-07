@@ -1,2 +1,3 @@
 # codewars
-Thanks Sergei for the idea
+
+Improving my TDD skills with some [codewars](https://www.codewars.com/) Kata.
