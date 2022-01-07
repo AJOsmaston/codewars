@@ -4,10 +4,12 @@ def rot13(input)
   output_array = []
 
   input_array.map do |character|
-    13.times do
-      character = character.next()
-      if character.length > 1
-        character = character[1]
+    if character.match?(/[[:alpha:]]/)
+      13.times do
+        character = character.next()
+        if character.length > 1
+          character = character[1]
+        end
       end
     end
     output_array.push(character)

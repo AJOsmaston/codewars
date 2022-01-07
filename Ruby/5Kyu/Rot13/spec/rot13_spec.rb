@@ -37,4 +37,10 @@ describe 'rot 13' do
     end
   end
 
+  describe 'non letter characters' do
+    it 'doesnt move space' do
+      expect(rot13(' ')).to eq ' '
+    end
+  end
+
 end
