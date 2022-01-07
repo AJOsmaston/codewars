@@ -41,6 +41,10 @@ describe 'rot 13' do
     it 'doesnt move space' do
       expect(rot13(' ')).to eq ' '
     end
+
+    it 'runs the example' do
+      expect(rot13('Ruby is cool!')).to eq 'Ehol vf pbby!'
+    end
   end
 
 end
