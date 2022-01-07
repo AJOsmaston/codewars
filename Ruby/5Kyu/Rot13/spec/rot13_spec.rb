@@ -23,5 +23,18 @@ describe 'rot 13' do
     it 'works for double character a' do
       expect(rot13('aa')).to eq 'nn'
     end
+
+    it 'works for double character Z' do
+      expect(rot13('ZZ')).to eq 'MM'
+    end
+
+    it 'works for example' do
+      expect(rot13('test')).to eq 'grfg'
+    end
+
+    it 'works for example 2' do
+      expect(rot13('Test')).to eq 'Grfg'
+    end
   end
+
 end
