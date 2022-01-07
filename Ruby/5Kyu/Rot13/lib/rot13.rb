@@ -1,9 +1,17 @@
 def rot13(input)
-  13.times do
-    input = input.next()
-    if input.length > 1
-      input = input[1]
+
+  input_array = input.chars
+  output_array = []
+
+  input_array.map do |character|
+    13.times do
+      character = character.next()
+      if character.length > 1
+        character = character[1]
+      end
     end
+    output_array.push(character)
   end
-  input
+
+  output_array.join('')
 end

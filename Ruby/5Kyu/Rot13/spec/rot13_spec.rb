@@ -19,4 +19,9 @@ describe 'rot 13' do
     end
   end
   
+  describe 'multiple characters' do
+    it 'works for double character a' do
+      expect(rot13('aa')).to eq 'nn'
+    end
+  end
 end
