@@ -12,6 +12,7 @@ def rot13(input)
         end
       end
     end
+    
     output_array.push(character)
   end
 

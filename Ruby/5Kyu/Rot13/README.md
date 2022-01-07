@@ -20,4 +20,6 @@ Breakdown
 After Submitting
 -----
 
+* look into the String.tr method
+
 [Link to Kata](https://www.codewars.com/kata/530e15517bc88ac656000716/train/ruby)
