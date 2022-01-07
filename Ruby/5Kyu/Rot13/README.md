@@ -12,7 +12,10 @@ Breakdown
 
 * Take string convert to array
 * Iterate through array, check if item is a letter
-* if so, advance it 13 places, replace item in array
+* if so, advance it 13 places by:
+  * converting it to a number
+
+* replace item in array
 * join array back to a string
 
 After Submitting
