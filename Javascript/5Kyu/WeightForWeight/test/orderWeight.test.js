@@ -20,10 +20,10 @@ describe('tests', () => {
       })
     })
 
-    // describe('unique numbers same weights', () => {
-    //   it('65 56', () => {
-    //     expect(orderWeight("65 56")).toEqual("56 65")
-    //   })
-    // })
+    describe('unique numbers same weights', () => {
+      it('65 56', () => {
+        expect(orderWeight("65 56")).toEqual("56 65")
+      })
+    })
   })
 })
