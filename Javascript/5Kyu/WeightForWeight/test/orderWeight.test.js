@@ -11,7 +11,13 @@ describe('tests', () => {
         expect(orderWeight("66 56")).toEqual("56 66")
       })
 
+      it('74 100', () => {
+        expect(orderWeight("74 100")).toEqual("100 74")
+      })
 
+      it("74 100 99", () => {
+        expect(orderWeight("74 100 99")).toEqual("100 74 99")
+      })
     })
     
   })
