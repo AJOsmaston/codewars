@@ -39,4 +39,7 @@ Breakdown
 After Submitting
 -----
 
+* Oof
+* I did not enjoy that. Honestly though, looking through the answers on codewars, I don't think I could have done too much better, so there's that.
+
 [Link to Kata](https://www.codewars.com/kata/55c6126177c9441a570000cc/train/javascript)

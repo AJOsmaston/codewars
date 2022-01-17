@@ -12,7 +12,6 @@ const orderWeight = (string) => {
     if (weightMemo[weight]) { 
       let addedArray = weightMemo[weight].split(' ')
       addedArray.push(number)
-      console.log(addedArray)
       //natural sort
       weightMemo[weight] = addedArray.sort((function(a,b){
           var a1=typeof a, b1=typeof b;
