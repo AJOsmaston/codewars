@@ -9,8 +9,10 @@ const orderWeight = (string) => {
       .reduce((a, b) => a + b, 0)
 
     //memoize
-    if (weightMemo[weight]) {
-      weightMemo[weight] = number < weightMemo[weight] ? `${number} ${weightMemo[weight]}`: `${weightMemo[weight]} ${number}`
+    if (weightMemo[weight]) { 
+      let addedArray = weightMemo[weight].split(' ')
+      addedArray.push(number)
+      weightMemo[weight] = addedArray.sort((a, b) => { return a-b }).join(' ')
     } else {
       weightMemo[weight] = number
       return weight

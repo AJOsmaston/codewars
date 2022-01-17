@@ -24,6 +24,10 @@ describe('tests', () => {
       it('65 56', () => {
         expect(orderWeight("65 56")).toEqual("56 65")
       })
+
+      it('65 56 83 92 29 38', () => {
+        expect(orderWeight("65 56 83 92 29 38")).toEqual("29 38 56 65 83 92")
+      })
     })
   })
 })
