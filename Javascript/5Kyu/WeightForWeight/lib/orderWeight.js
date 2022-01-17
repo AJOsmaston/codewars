@@ -10,19 +10,18 @@ const orderWeight = (string) => {
 
     //memoize
     if (weightMemo[weight]) {
-      weightMemo[weight] > number ? weight -= 1 : weight += 1
+      weightMemo[weight] = number < weightMemo[weight] ? `${number} ${weightMemo[weight]}`: `${weightMemo[weight]} ${number}`
+    } else {
+      weightMemo[weight] = number
+      return weight
     }
-    weightMemo[weight] = number
-
-    console.log(weightMemo)
    
-    return weight
   }).sort((a, b) => { return a-b })
 
   //replace weights with original value
   return weightArray.map(weight => {
-    return weightMemo[weight]
-  }).join(' ')
+    return weightMemo[weight] 
+  }).join(' ').trim()
 }
 
 module.exports = orderWeight;
