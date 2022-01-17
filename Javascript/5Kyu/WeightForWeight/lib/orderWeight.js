@@ -1,18 +1,17 @@
 const orderWeight = (string) => {
-  let weightArray = []
   let weightMemo = {}
 
-  string.split(' ').forEach(number => {
+  let weightArray = string.split(' ').map(number => {
     // split into individual numbers
     let weight = number
       .split('')
       .map(character => {return parseInt(character)})
       .reduce((a, b) => a + b, 0)
-   
-    weightArray.push(weight)
 
     //memoize
     weightMemo[weight] = number
+   
+    return weight
   })
 
   //sort weights in ascending order
