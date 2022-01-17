@@ -12,7 +12,12 @@ const orderWeight = (string) => {
     if (weightMemo[weight]) { 
       let addedArray = weightMemo[weight].split(' ')
       addedArray.push(number)
-      weightMemo[weight] = addedArray.sort((a, b) => { return a-b }).join(' ')
+      console.log(addedArray)
+      //natural sort
+      weightMemo[weight] = addedArray.sort((function(a,b){
+          var a1=typeof a, b1=typeof b;
+          return a1<b1 ? -1 : a1>b1 ? 1 : a<b ? -1 : a>b ? 1 : 0;
+        })).join(' ')
     } else {
       weightMemo[weight] = number
       return weight
