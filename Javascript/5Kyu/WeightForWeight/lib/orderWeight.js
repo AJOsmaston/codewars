@@ -5,11 +5,13 @@ const orderWeight = (string) => {
 
   string.split(' ').forEach(number => {
     // split into individual numbers
-    let numberArray = []
-    number.split('').forEach(character => {numberArray.push(parseInt(character))})
-    //sum the array (convert to weight)
-    let weight = numberArray.reduce((a, b) => a + b, 0)
+    let weight = number
+      .split('')
+      .map(character => {return parseInt(character)})
+      .reduce((a, b) => a + b, 0)
+   
     weightArray.push(weight)
+    
     //memoize
     weightMemo[weight] = number
   })
