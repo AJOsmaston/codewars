@@ -12,10 +12,7 @@ const orderWeight = (string) => {
     weightMemo[weight] = number
    
     return weight
-  })
-
-  //sort weights in ascending order
-  weightArray.sort((a, b) => { return a-b })
+  }).sort((a, b) => { return a-b })
 
   //replace weights with original value
   return weightArray.map(weight => {
