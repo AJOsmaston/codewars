@@ -1,7 +1,6 @@
 const orderWeight = (string) => {
   let weightArray = []
   let weightMemo = {}
-  let resultArray = []
 
   string.split(' ').forEach(number => {
     // split into individual numbers
@@ -11,7 +10,7 @@ const orderWeight = (string) => {
       .reduce((a, b) => a + b, 0)
    
     weightArray.push(weight)
-    
+
     //memoize
     weightMemo[weight] = number
   })
@@ -20,11 +19,9 @@ const orderWeight = (string) => {
   weightArray.sort((a, b) => { return a-b })
 
   //replace weights with original value
-  weightArray.forEach(weight => {
-    resultArray.push(weightMemo[weight])
-  })
-
-  return resultArray.join(' ')
+  return weightArray.map(weight => {
+    return weightMemo[weight]
+  }).join(' ')
 }
 
 module.exports = orderWeight;
