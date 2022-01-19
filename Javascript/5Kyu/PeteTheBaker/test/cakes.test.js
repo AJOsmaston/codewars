@@ -12,4 +12,8 @@ describe('tests', () => {
   it('checks for a different quanitity of pears', () => {
     expect(cakes({pears: 1}, {pears: 2})).toEqual(2)
   })
+
+  it('checks for a different quanitity of pears in recipe', () => {
+    expect(cakes({pears: 2}, {pears: 4})).toEqual(2)
+  })
 })

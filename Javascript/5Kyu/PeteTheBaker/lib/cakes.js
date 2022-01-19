@@ -1,6 +1,8 @@
 function cakes(recipe, available) {
-  for (const [key, value] of Object.entries(available)) {
-    return value
+  for (const [recKey, recValue] of Object.entries(recipe)) {
+    for (const [avaKey, avaValue] of Object.entries(available)) {
+      return avaValue / recValue
+    }
   }
 }
 
