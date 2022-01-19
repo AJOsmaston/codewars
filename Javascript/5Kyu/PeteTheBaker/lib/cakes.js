@@ -1,5 +1,5 @@
 function cakes(recipe, available) {
-  // TODO: insert code
+  return 1
 }
 
 module.exports = cakes;
