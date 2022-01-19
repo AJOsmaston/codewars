@@ -1,5 +1,5 @@
 function cakes(recipe, available) {
-  return 1
+  return available.apples
 }
 
 module.exports = cakes;
