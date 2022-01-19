@@ -1,5 +1,7 @@
 function cakes(recipe, available) {
-  return available.apples
+  for (const [key, value] of Object.entries(available)) {
+    return value
+  }
 }
 
 module.exports = cakes;
