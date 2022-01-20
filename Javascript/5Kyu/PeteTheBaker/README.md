@@ -18,8 +18,14 @@ cakes({apples: 3, flour: 300, sugar: 150, milk: 100, oil: 100}, {sugar: 500, flo
 Breakdown
 -----
 
+* iterate through recipe object
+* check for item in available object
+* store how many can be made with that object
+* return the smallest value
 
 After Submitting
 -----
 
-[Link to Kata]()
+* Could think about this differently, map the results of the object.entries to an array and then use Math.min on the end result instead of using nested for loops.
+
+[Link to Kata](https://www.codewars.com/kata/525c65e51bf619685c000059)
