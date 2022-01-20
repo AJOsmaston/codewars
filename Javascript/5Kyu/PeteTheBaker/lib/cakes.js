@@ -3,7 +3,7 @@ function cakes(recipe, available) {
   let result = []
   for (const [recKey, recValue] of Object.entries(recipe)) {
     for (const [avaKey, avaValue] of Object.entries(available)) {
-      if (recKey === avaKey) { result.push(avaValue / recValue) }
+      if (recKey === avaKey) { result.push(Math.floor(avaValue / recValue)) }
     }
     count += 1
   }

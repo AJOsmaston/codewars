@@ -27,6 +27,10 @@ describe('tests', () => {
     it('checks for an additional available items', () => {
       expect(cakes({apples: 1, pears: 1}, {apples: 1})).toEqual(0)
     })
+
+    it('returns only whole numbers', () => {
+      expect(cakes({flour: 100, pears: 1}, {flour: 140, pears: 10})).toEqual(1)
+    })
   })
 
 })
