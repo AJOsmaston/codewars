@@ -27,5 +27,6 @@ After Submitting
 -----
 
 * Could think about this differently, map the results of the object.entries to an array and then use Math.min on the end result instead of using nested for loops.
+* Object.keys, Object.values, Object.entries are powerful tools for dealing with javascript objects.
 
 [Link to Kata](https://www.codewars.com/kata/525c65e51bf619685c000059)
